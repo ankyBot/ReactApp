@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
 
 /* function Greet() {
    return <h1>Hello Ankit with React</h1>
 } */
 
 let Greet = (props) => {
-   return(
-      <div>
-         <h1>Hello (Greet){props.name} a.k.a {props.heroName}</h1>
-         {props.children}
-      </div>
-   )
-}
+  const { name, heroName } = props;
+  return (
+    <div>
+      <h1>
+        Hello {name} a.k.a {heroName}
+      </h1>
+      {props.children}
+    </div>
+  );
+};
 
-export default Greet
-
+export default Greet;
